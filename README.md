@@ -2,13 +2,17 @@
 
 A mod that allows players to convert ammunition between different calibers at a workbench.
 
+**Version**: 1.0  
+**Compatible with**: 7 Days to Die V2.4
+
 ## Features
 
 - Convert between 9mm, 7.62mm, .44 Magnum, and Shotgun Shells
 - Convert between Iron/Steel Arrows and Crossbow Bolts
-- Balanced conversion rates based on vanilla recipe yields
-- Small reforging penalty (approximately 10-25% loss) to prevent infinite conversion exploits
-- Requires a workbench and minimal additional resources
+- Creates vanilla ammo that works with all weapons
+- Balanced conversion rates based on vanilla recipe yields with ~25% reforging penalty
+- Requires a workbench and minimal additional resources (gunpowder or paper)
+- Multiple alternative recipes for each ammo type based on what you have available
 
 ## Installation
 
@@ -45,27 +49,32 @@ The mod uses balanced conversion rates based on the vanilla crafting yields:
 ## Balance Philosophy
 
 - **Resource Parity**: Conversions respect the original crafting costs. If 1 recipe of 9mm uses the same resources as 1 recipe of 7.62mm, you get equivalent value out.
-- **Reforge Penalty**: A ~10-25% material loss is applied to prevent infinite conversion loops from generating free ammo.
-- **Additional Resources**: Most conversions require 1 gunpowder or paper to represent the reforging process and prevent exploits.
+- **Reforge Penalty**: A ~25% material loss is applied to prevent infinite conversion loops from generating free ammo.
+- **Additional Resources**: Conversions require 1 gunpowder or paper to represent the reforging process.
+- **Vanilla Output**: All recipes create vanilla ammunition that works exactly like standard ammo - no compatibility issues with weapons.
 
 ## Requirements
 
-- 7 Days to Die
-- A workbench to craft reforge recipes
+- 7 Days to Die V2.4 (or compatible versions)
+- A workbench to access the reforge recipes
 
 ## How to Use
 
-1. **Learn base ammo recipes** through normal gameplay (perks, schematics, or by crafting)
-2. **Reforge recipes unlock automatically** when you learn to craft both ammo types involved
-   - Example: Once you can craft 9mm AND 7.62mm, the "9mm to 7.62mm" reforge unlocks
-3. Build or find a workbench
-4. Open the workbench crafting menu and search for "Reforge"
+1. Build or find a workbench
+2. Collect ammunition of any caliber you want to convert
+3. Gather gunpowder or paper as additional ingredients
+4. Open the workbench crafting menu
+5. Each ammo type will show alternative recipes based on different input ammunition
+   - Example: 7.62mm ammo can be crafted from 9mm, .44 Magnum, or Shotgun Shells
+   - Choose the recipe that uses the ammo type you have in surplus
 
-No additional schematics needed - reforge recipes unlock as you progress naturally!
+No schematics or unlocks required - all conversion recipes are available immediately!
 
 ## Compatibility
 
-This mod uses XPath appending and should be compatible with most other mods. It does not modify any vanilla items or recipes directly.
+This mod uses XPath appending to add alternative crafting recipes for vanilla ammunition items. It does not modify any existing vanilla items or recipes, making it compatible with most other mods.
+
+**Technical Details**: The mod adds multiple recipes with the same output item (vanilla ammo) but different ingredients. The game shows these as alternative crafting options in the workbench menu.
 
 ## License
 
