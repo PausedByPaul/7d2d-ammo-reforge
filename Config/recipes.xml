@@ -14,10 +14,14 @@
     
     This ensures no resource duplication while adding a penalty for flexibility.
     
-    Recipes use custom item names that extend vanilla ammo (functionally identical).
-    The reforged ammo works exactly like the original ammo type.
+    Recipes output vanilla ammo items directly. Multiple recipes can create the same item
+    with different ingredients, and the game shows them as alternative crafting options.
     
-    Recipes are unlocked automatically when players craft the corresponding base ammo type.
+    Ammo types are segregated by specialization:
+    - Ball ammo can convert to any Ball caliber or Shotgun Shells
+    - AP (Armor Piercing) can only convert to other AP types
+    - HP (Hollow Point) can only convert to other HP types
+    - Arrows/Bolts convert within their own category
 -->
 <configs>
     <!-- ==================== 9mm CONVERSIONS ==================== -->
@@ -153,6 +157,106 @@
     <append xpath="/recipes">
         <recipe name="ammoArrowSteelAP" count="4" craft_time="3" craft_area="workbench" tags="ammoReforge">
             <ingredient name="ammoCrossbowBoltSteelAP" count="5"/>
+        </recipe>
+    </append>
+    
+    <!-- ==================== ARMOR PIERCING (AP) CONVERSIONS ==================== -->
+    
+    <!-- 9mm AP to 7.62mm AP -->
+    <append xpath="/recipes">
+        <recipe name="ammo762mmBulletAP" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo9mmBulletAP" count="6"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- 9mm AP to .44 Magnum AP -->
+    <append xpath="/recipes">
+        <recipe name="ammo44MagnumBulletAP" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo9mmBulletAP" count="6"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- 7.62mm AP to 9mm AP -->
+    <append xpath="/recipes">
+        <recipe name="ammo9mmBulletAP" count="5" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo762mmBulletAP" count="4"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- 7.62mm AP to .44 Magnum AP -->
+    <append xpath="/recipes">
+        <recipe name="ammo44MagnumBulletAP" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo762mmBulletAP" count="4"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- .44 Magnum AP to 9mm AP -->
+    <append xpath="/recipes">
+        <recipe name="ammo9mmBulletAP" count="5" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo44MagnumBulletAP" count="4"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- .44 Magnum AP to 7.62mm AP -->
+    <append xpath="/recipes">
+        <recipe name="ammo762mmBulletAP" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo44MagnumBulletAP" count="4"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- ==================== HOLLOW POINT (HP) CONVERSIONS ==================== -->
+    
+    <!-- 9mm HP to 7.62mm HP -->
+    <append xpath="/recipes">
+        <recipe name="ammo762mmBulletHP" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo9mmBulletHP" count="6"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- 9mm HP to .44 Magnum HP -->
+    <append xpath="/recipes">
+        <recipe name="ammo44MagnumBulletHP" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo9mmBulletHP" count="6"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- 7.62mm HP to 9mm HP -->
+    <append xpath="/recipes">
+        <recipe name="ammo9mmBulletHP" count="5" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo762mmBulletHP" count="4"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- 7.62mm HP to .44 Magnum HP -->
+    <append xpath="/recipes">
+        <recipe name="ammo44MagnumBulletHP" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo762mmBulletHP" count="4"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- .44 Magnum HP to 9mm HP -->
+    <append xpath="/recipes">
+        <recipe name="ammo9mmBulletHP" count="5" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo44MagnumBulletHP" count="4"/>
+            <ingredient name="resourceGunPowder" count="1"/>
+        </recipe>
+    </append>
+    
+    <!-- .44 Magnum HP to 7.62mm HP -->
+    <append xpath="/recipes">
+        <recipe name="ammo762mmBulletHP" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo44MagnumBulletHP" count="4"/>
+            <ingredient name="resourceGunPowder" count="1"/>
         </recipe>
     </append>
 </configs>

@@ -7,12 +7,15 @@ A mod that allows players to convert ammunition between different calibers at a 
 
 ## Features
 
-- Convert between 9mm, 7.62mm, .44 Magnum, and Shotgun Shells
+- Convert between 9mm, 7.62mm, .44 Magnum, and Shotgun Shells (Ball ammo)
+- Convert between AP (Armor Piercing) ammo types: 9mm AP ↔ 7.62mm AP ↔ .44 Magnum AP
+- Convert between HP (Hollow Point) ammo types: 9mm HP ↔ 7.62mm HP ↔ .44 Magnum HP
 - Convert between Iron/Steel Arrows and Crossbow Bolts
 - Creates vanilla ammo that works with all weapons
 - Balanced conversion rates based on vanilla recipe yields with ~25% reforging penalty
 - Requires a workbench and minimal additional resources (gunpowder or paper)
 - Multiple alternative recipes for each ammo type based on what you have available
+- AP ammo can only be converted to other AP types, HP to other HP types (maintains ammo specialization)
 
 ## Installation
 
@@ -25,7 +28,9 @@ A mod that allows players to convert ammunition between different calibers at a 
 
 ## Conversion Rates
 
-The mod uses balanced conversion rates based on the vanilla crafting yields:
+The mod uses balanced conversion rates based on the vanilla crafting yields. All conversions include a ~25% reforging penalty.
+
+### Ball Ammo Conversions
 
 | From | To | Input | Output | Notes |
 |------|----|----|--------|-------|
@@ -41,10 +46,37 @@ The mod uses balanced conversion rates based on the vanilla crafting yields:
 | Shotgun Shells | 9mm | 4 + 1 gunpowder | 5 | |
 | Shotgun Shells | 7.62mm | 4 + 1 gunpowder | 3 | |
 | Shotgun Shells | .44 Magnum | 4 + 1 gunpowder | 3 | |
-| Iron Arrows | Iron Bolts | 5 | 4 | |
-| Iron Bolts | Iron Arrows | 5 | 4 | |
-| Steel Arrows | Steel Bolts | 5 | 4 | |
-| Steel Bolts | Steel Arrows | 5 | 4 | |
+
+### Armor Piercing (AP) Ammo Conversions
+
+| From | To | Input | Output |
+|------|----|----|--------|
+| 9mm AP | 7.62mm AP | 6 + 1 gunpowder | 3 |
+| 9mm AP | .44 Magnum AP | 6 + 1 gunpowder | 3 |
+| 7.62mm AP | 9mm AP | 4 + 1 gunpowder | 5 |
+| 7.62mm AP | .44 Magnum AP | 4 + 1 gunpowder | 3 |
+| .44 Magnum AP | 9mm AP | 4 + 1 gunpowder | 5 |
+| .44 Magnum AP | 7.62mm AP | 4 + 1 gunpowder | 3 |
+
+### Hollow Point (HP) Ammo Conversions
+
+| From | To | Input | Output |
+|------|----|----|--------|
+| 9mm HP | 7.62mm HP | 6 + 1 gunpowder | 3 |
+| 9mm HP | .44 Magnum HP | 6 + 1 gunpowder | 3 |
+| 7.62mm HP | 9mm HP | 4 + 1 gunpowder | 5 |
+| 7.62mm HP | .44 Magnum HP | 4 + 1 gunpowder | 3 |
+| .44 Magnum HP | 9mm HP | 4 + 1 gunpowder | 5 |
+| .44 Magnum HP | 7.62mm HP | 4 + 1 gunpowder | 3 |
+
+### Arrow/Bolt Conversions
+
+| From | To | Input | Output |
+|------|----|----|--------|
+| Iron Arrows | Iron Bolts | 5 | 4 |
+| Iron Bolts | Iron Arrows | 5 | 4 |
+| Steel AP Arrows | Steel AP Bolts | 5 | 4 |
+| Steel AP Bolts | Steel AP Arrows | 5 | 4 |
 
 ## Balance Philosophy
 
@@ -65,8 +97,11 @@ The mod uses balanced conversion rates based on the vanilla crafting yields:
 3. Gather gunpowder or paper as additional ingredients
 4. Open the workbench crafting menu
 5. Each ammo type will show alternative recipes based on different input ammunition
-   - Example: 7.62mm ammo can be crafted from 9mm, .44 Magnum, or Shotgun Shells
+   - Example: 7.62mm Ball ammo can be crafted from 9mm, .44 Magnum, or Shotgun Shells
+   - Example: 7.62mm AP can be crafted from 9mm AP or .44 Magnum AP (AP stays AP)
    - Choose the recipe that uses the ammo type you have in surplus
+
+**Important**: AP ammo can only be converted to other AP types, and HP ammo can only be converted to other HP types. This maintains the unique properties of specialized ammunition.
 
 No schematics or unlocks required - all conversion recipes are available immediately!
 
