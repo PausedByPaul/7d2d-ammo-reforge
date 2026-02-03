@@ -33,7 +33,7 @@ The mod uses balanced conversion rates based on the vanilla crafting yields. All
 ### Ball Ammo Conversions
 
 | From | To | Input | Output |
-|------|----|----|--------|-------|
+|------|----|----|--------|
 | 9mm | 7.62mm | 6 + 1 gunpowder | 3 |
 | 9mm | .44 Magnum | 6 + 1 gunpowder | 3 |
 | 9mm | Shotgun Shells | 6 + 1 paper | 3 |
