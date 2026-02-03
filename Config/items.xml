@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Ammo Reforge Mod - Items
+    
+    This file defines the reforge recipe items that produce vanilla ammunition.
+    Each recipe item specifies the actual ammo output.
+-->
+<configs>
+    <!-- ==================== 9mm REFORGE OUTPUTS ==================== -->
+    
+    <append xpath="/items">
+        <item name="ammoReforge9mmTo762">
+            <property name="Extends" value="ammo762mmBullet"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammo762mmBullet"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforge9mmTo44Magnum">
+            <property name="Extends" value="ammo44MagnumBullet"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammo44MagnumBullet"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforge9mmToShotgunShell">
+            <property name="Extends" value="ammoShotgunShell"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammoShotgunShell"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <!-- ==================== 7.62mm REFORGE OUTPUTS ==================== -->
+    
+    <append xpath="/items">
+        <item name="ammoReforge762To9mm">
+            <property name="Extends" value="ammo9mmBullet"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammo9mmBullet"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforge762To44Magnum">
+            <property name="Extends" value="ammo44MagnumBullet"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammo44MagnumBullet"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforge762ToShotgunShell">
+            <property name="Extends" value="ammoShotgunShell"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammoShotgunShell"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <!-- ==================== .44 MAGNUM REFORGE OUTPUTS ==================== -->
+    
+    <append xpath="/items">
+        <item name="ammoReforge44MagnumTo9mm">
+            <property name="Extends" value="ammo9mmBullet"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammo9mmBullet"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforge44MagnumTo762">
+            <property name="Extends" value="ammo762mmBullet"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammo762mmBullet"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforge44MagnumToShotgunShell">
+            <property name="Extends" value="ammoShotgunShell"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammoShotgunShell"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <!-- ==================== SHOTGUN SHELL REFORGE OUTPUTS ==================== -->
+    
+    <append xpath="/items">
+        <item name="ammoReforgeShotgunShellTo9mm">
+            <property name="Extends" value="ammo9mmBullet"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammo9mmBullet"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforgeShotgunShellTo762">
+            <property name="Extends" value="ammo762mmBullet"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammo762mmBullet"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforgeShotgunShellTo44Magnum">
+            <property name="Extends" value="ammo44MagnumBullet"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammo44MagnumBullet"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <!-- ==================== ARROW/BOLT REFORGE OUTPUTS ==================== -->
+    
+    <append xpath="/items">
+        <item name="ammoReforgeArrowToBolt">
+            <property name="Extends" value="ammoCrossbowBoltIron"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammoCrossbowBoltIron"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforgeBoltToArrow">
+            <property name="Extends" value="ammoArrowIron"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammoArrowIron"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforgeSteelArrowToBolt">
+            <property name="Extends" value="ammoCrossbowBoltSteel"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammoCrossbowBoltSteel"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+    
+    <append xpath="/items">
+        <item name="ammoReforgeSteelBoltToArrow">
+            <property name="Extends" value="ammoArrowSteel"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="ammoArrowSteel"/>
+            <property name="CustomIconTint" value="80,180,80"/>
+        </item>
+    </append>
+</configs>

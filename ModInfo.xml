@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="Ammo Reforge" />
+    <DisplayName value="Ammo Reforge" />
+    <Version value="1.0.0" />
+    <Description value="Allows players to reforge ammunition into different calibers. Conversions respect original recipe costs to prevent exploits." />
+    <Author value="Custom" />
+    <Website value="" />
+</xml>

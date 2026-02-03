@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Ammo Reforge Mod - Recipes
+    
+    Conversion rates are based on vanilla crafting yields to prevent exploits:
+    - 9mm Bullet: 6 per craft (1 gunpowder, 1 bullet tip, 1 bullet casing)
+    - 7.62mm Bullet: 4 per craft (1 gunpowder, 1 bullet tip, 1 bullet casing)
+    - .44 Magnum Bullet: 4 per craft (1 gunpowder, 1 bullet tip, 1 bullet casing)
+    - Shotgun Shell: 4 per craft (1 gunpowder, 1 buckshot, 1 paper)
+    
+    Conversion formula: Input × (InputYield÷OutputYield) with ~25% loss for reforging
+    Example: 6 × 9mm → 4 × 7.62 (6 9mm = 1 recipe worth, 4 7.62 = 1 recipe worth)
+    With 25% loss: 6 × 9mm → 3 × 7.62
+    
+    This ensures no resource duplication while adding a penalty for flexibility.
+    
+    Recipes use custom item names that extend vanilla ammo (functionally identical).
+    The reforged ammo works exactly like the original ammo type.
+    
+    Recipes are unlocked automatically when players craft the corresponding base ammo type.
+-->
+<configs>
+    <!-- ==================== 9mm CONVERSIONS ==================== -->
+    
+    <!-- 9mm to 7.62mm (6 9mm = 1 recipe, outputs 3 7.62 with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforge9mmTo762" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo9mmBullet" count="6"/>
+            <ingredient name="ammoGunPowder" count="1"/>
+            <unlock_by_crafting>ammo9mmBullet</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- 9mm to .44 Magnum (6 9mm = 1 recipe, outputs 3 .44 with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforge9mmTo44Magnum" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo9mmBullet" count="6"/>
+            <ingredient name="ammoGunPowder" count="1"/>
+            <unlock_by_crafting>ammo9mmBullet,ammo44MagnumBullet</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- 9mm to Shotgun Shells (6 9mm = 1 recipe, outputs 3 shells with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforge9mmToShotgunShell" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo9mmBullet" count="6"/>
+            <ingredient name="resourcePaper" count="1"/>
+            <unlock_by_crafting>ammo9mmBullet,ammoShotgunShell</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- ==================== 7.62mm CONVERSIONS ==================== -->
+    
+    <!-- 7.62mm to 9mm (4 7.62 = 1 recipe, outputs 5 9mm with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforge762To9mm" count="5" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo762mmBullet" count="4"/>
+            <ingredient name="ammoGunPowder" count="1"/>
+            <unlock_by_crafting>ammo762mmBullet,ammo9mmBullet</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- 7.62mm to .44 Magnum (4 7.62 = 1 recipe, outputs 3 .44 with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforge762To44Magnum" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo762mmBullet" count="4"/>
+            <ingredient name="ammoGunPowder" count="1"/>
+            <unlock_by_crafting>ammo762mmBullet,ammo44MagnumBullet</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- 7.62mm to Shotgun Shells (4 7.62 = 1 recipe, outputs 3 shells with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforge762ToShotgunShell" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo762mmBullet" count="4"/>
+            <ingredient name="resourcePaper" count="1"/>
+            <unlock_by_crafting>ammo762mmBullet,ammoShotgunShell</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- ==================== .44 MAGNUM CONVERSIONS ==================== -->
+    
+    <!-- .44 Magnum to 9mm (4 .44 = 1 recipe, outputs 5 9mm with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforge44MagnumTo9mm" count="5" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo44MagnumBullet" count="4"/>
+            <ingredient name="ammoGunPowder" count="1"/>
+            <unlock_by_crafting>ammo44MagnumBullet,ammo9mmBullet</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- .44 Magnum to 7.62mm (4 .44 = 1 recipe, outputs 3 7.62 with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforge44MagnumTo762" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo44MagnumBullet" count="4"/>
+            <ingredient name="ammoGunPowder" count="1"/>
+            <unlock_by_crafting>ammo44MagnumBullet,ammo762mmBullet</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- .44 Magnum to Shotgun Shells (4 .44 = 1 recipe, outputs 3 shells with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforge44MagnumToShotgunShell" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammo44MagnumBullet" count="4"/>
+            <ingredient name="resourcePaper" count="1"/>
+            <unlock_by_crafting>ammo44MagnumBullet,ammoShotgunShell</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- ==================== SHOTGUN SHELL CONVERSIONS ==================== -->
+    
+    <!-- Shotgun Shells to 9mm (4 shells = 1 recipe, outputs 5 9mm with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforgeShotgunShellTo9mm" count="5" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammoShotgunShell" count="4"/>
+            <ingredient name="ammoGunPowder" count="1"/>
+            <unlock_by_crafting>ammoShotgunShell,ammo9mmBullet</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- Shotgun Shells to 7.62mm (4 shells = 1 recipe, outputs 3 7.62 with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforgeShotgunShellTo762" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammoShotgunShell" count="4"/>
+            <ingredient name="ammoGunPowder" count="1"/>
+            <unlock_by_crafting>ammoShotgunShell,ammo762mmBullet</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- Shotgun Shells to .44 Magnum (4 shells = 1 recipe, outputs 3 .44 with reforge loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforgeShotgunShellTo44Magnum" count="3" craft_time="5" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammoShotgunShell" count="4"/>
+            <ingredient name="ammoGunPowder" count="1"/>
+            <unlock_by_crafting>ammoShotgunShell,ammo44MagnumBullet</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- ==================== SPECIALTY AMMO CONVERSIONS ==================== -->
+    
+    <!-- Arrows/Bolts conversions for crossbow users -->
+    
+    <!-- Iron Arrows to Iron Crossbow Bolts (5 arrows = 4 bolts, minor loss) -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforgeArrowToBolt" count="4" craft_time="3" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammoArrowIron" count="5"/>
+            <unlock_by_crafting>ammoArrowIron,ammoCrossbowBoltIron</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- Iron Crossbow Bolts to Iron Arrows -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforgeBoltToArrow" count="4" craft_time="3" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammoCrossbowBoltIron" count="5"/>
+            <unlock_by_crafting>ammoCrossbowBoltIron,ammoArrowIron</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- Steel Arrows to Steel Crossbow Bolts -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforgeSteelArrowToBolt" count="4" craft_time="3" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammoArrowSteel" count="5"/>
+            <unlock_by_crafting>ammoArrowSteel,ammoCrossbowBoltSteel</unlock_by_crafting>
+        </recipe>
+    </append>
+    
+    <!-- Steel Crossbow Bolts to Steel Arrows -->
+    <append xpath="/recipes">
+        <recipe name="ammoReforgeSteelBoltToArrow" count="4" craft_time="3" craft_area="workbench" tags="ammoReforge">
+            <ingredient name="ammoCrossbowBoltSteel" count="5"/>
+            <unlock_by_crafting>ammoCrossbowBoltSteel,ammoArrowSteel</unlock_by_crafting>
+        </recipe>
+    </append>
+</configs>
