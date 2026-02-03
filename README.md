@@ -3,7 +3,7 @@
 A mod that allows players to convert ammunition between different calibers at a workbench.
 
 **Version**: 1.0  
-**Compatible with**: 7 Days to Die V2.4
+**Compatible with**: 7 Days to Die V2.4+
 
 ## Features
 
@@ -32,20 +32,20 @@ The mod uses balanced conversion rates based on the vanilla crafting yields. All
 
 ### Ball Ammo Conversions
 
-| From | To | Input | Output | Notes |
+| From | To | Input | Output |
 |------|----|----|--------|-------|
-| 9mm | 7.62mm | 6 + 1 gunpowder | 3 | 9mm makes 6/recipe, 7.62 makes 4/recipe |
-| 9mm | .44 Magnum | 6 + 1 gunpowder | 3 | |
-| 9mm | Shotgun Shells | 6 + 1 paper | 3 | |
-| 7.62mm | 9mm | 4 + 1 gunpowder | 5 | |
-| 7.62mm | .44 Magnum | 4 + 1 gunpowder | 3 | |
-| 7.62mm | Shotgun Shells | 4 + 1 paper | 3 | |
-| .44 Magnum | 9mm | 4 + 1 gunpowder | 5 | |
-| .44 Magnum | 7.62mm | 4 + 1 gunpowder | 3 | |
-| .44 Magnum | Shotgun Shells | 4 + 1 paper | 3 | |
-| Shotgun Shells | 9mm | 4 + 1 gunpowder | 5 | |
-| Shotgun Shells | 7.62mm | 4 + 1 gunpowder | 3 | |
-| Shotgun Shells | .44 Magnum | 4 + 1 gunpowder | 3 | |
+| 9mm | 7.62mm | 6 + 1 gunpowder | 3 |
+| 9mm | .44 Magnum | 6 + 1 gunpowder | 3 |
+| 9mm | Shotgun Shells | 6 + 1 paper | 3 |
+| 7.62mm | 9mm | 4 + 1 gunpowder | 5 |
+| 7.62mm | .44 Magnum | 4 + 1 gunpowder | 3 |
+| 7.62mm | Shotgun Shells | 4 + 1 paper | 3 |
+| .44 Magnum | 9mm | 4 + 1 gunpowder | 5 |
+| .44 Magnum | 7.62mm | 4 + 1 gunpowder | 3 |
+| .44 Magnum | Shotgun Shells | 4 + 1 paper | 3 |
+| Shotgun Shells | 9mm | 4 + 1 gunpowder | 5 |
+| Shotgun Shells | 7.62mm | 4 + 1 gunpowder | 3 |
+| Shotgun Shells | .44 Magnum | 4 + 1 gunpowder | 3 |
 
 ### Armor Piercing (AP) Ammo Conversions
 
